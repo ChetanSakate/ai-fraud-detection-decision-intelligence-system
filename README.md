@@ -1,4 +1,4 @@
-# AI-Powered Fraud Detection & Decision Intelligence System
+# End-to-End AI-Powered Fraud Detection System Inspired by Mastercard Decision Intelligence
 
 ## Overview
 This project simulates a real-world fintech fraud detection system inspired by platforms like Mastercard Decision Intelligence.
