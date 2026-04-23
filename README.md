@@ -36,7 +36,7 @@ Data Generation → MySQL → SQL Fraud Analysis → Python (Feature Engineering
 
 ---
 
-## ⚙️ Approach
+##  Approach
 
 ### 1. Data Engineering (MySQL)
 - Designed realistic transaction dataset (40K+ records)
@@ -123,7 +123,7 @@ Implemented a **dynamic threshold simulation layer** allowing stakeholders to:
 
 ---
 
-## ⚙️ Tech Stack
+##  Tech Stack
 
 - MySQL  
 - Python (Pandas, NumPy)  
@@ -132,7 +132,7 @@ Implemented a **dynamic threshold simulation layer** allowing stakeholders to:
 
 ---
 
-## 📸 Dashboard Preview
+##  Dashboard Preview
 
 ![Fraud Dashboard]
 <img width="1755" height="1241" alt="DB_page-0001" src="https://github.com/user-attachments/assets/22c451ca-ed82-4280-af38-e86f463cfb5a" />
@@ -147,12 +147,12 @@ Implemented a **dynamic threshold simulation layer** allowing stakeholders to:
 
 ---
 
-## 👤 Author
+##  Author
 
 **Chetan Sakate**  
 Analyst | Fintech | Data & Decision Systems  
 
 ---
 
-## 📌 Note
+## Note
 This project is a simulation built for analytical and learning purposes, inspired by real-world fintech systems.
