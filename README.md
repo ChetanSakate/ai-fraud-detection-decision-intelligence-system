@@ -1,56 +1,64 @@
-# End-to-End Fintech Fraud Detection System with Decision Intelligence & What-if Simulation
+# 🚀 End-to-End Fintech Fraud Detection System with Decision Intelligence & What-if Simulation
 
-Built to simulate real-world payment risk systems (inspired by Mastercard Decision Intelligence)
+💡 Built to simulate real-world payment risk systems inspired by Mastercard Decision Intelligence.
 
-Key Capability: Dynamic threshold optimisation to balance fraud detection vs customer experience
-
-
-## Overview
-This project simulates a real-world fintech fraud detection system inspired by platforms like Mastercard Decision Intelligence.
-
-It is designed to detect fraudulent transactions while minimising false positives, enabling a balance between risk control and customer experience.
+📊 **Key Capability:** Dynamic threshold optimization to balance fraud detection vs customer experience.
 
 ---
 
-## Business Problem
-In digital payments, financial institutions face a critical trade-off:
+## 🎯 Business Problem
 
-- Prevent fraud losses  
-- Avoid blocking genuine customers  
+Digital payment systems face a critical challenge:
 
-Traditional rule-based systems often fail, leading to:
-- High false positives (customer friction)
-- Missed fraud (financial loss)
+- Prevent fraudulent transactions (reduce financial loss)
+- Avoid blocking genuine users (reduce customer friction)
+
+Traditional rule-based systems often fail, resulting in:
+- High false positives (poor customer experience)
+- Missed fraud (revenue leakage)
 
 ---
 
-## Solution Summary
-Built an end-to-end decision intelligence system that:
+## 💡 Solution Summary
 
-- Detects fraud using behavioural signals  
+This project builds a complete **decision intelligence system** that:
+
+- Detects fraud using behavioral and transactional signals  
 - Assigns transaction-level risk scores  
-- Classifies decisions (APPROVE / REVIEW / DECLINE)  
-- Enables dynamic threshold simulation for optimisation  
+- Classifies decisions: **APPROVE / REVIEW / DECLINE**  
+- Enables **dynamic threshold simulation** to optimize outcomes  
 
 ---
 
-## System Architecture
+## 🏗️ System Architecture
 
-Data Generation → MySQL → SQL Fraud Analysis → Python (Feature Engineering + Risk Scoring) → Power BI Dashboard → Decision Engine
-
-
----
-
-##  Approach
-
-### 1. Data Engineering (MySQL)
-- Designed realistic transaction dataset (40K+ records)
-- Simulated Indian payment behaviour patterns
-- Included fraud signals (device change, night activity, spend spikes)
+<img width="1918" height="922" alt="image" src="https://github.com/user-attachments/assets/61f08bf7-c6f2-4869-bd04-8b1308c7b859" />
 
 ---
 
-### 2. Fraud Pattern Analysis (MySQL)
+## 🧠 What Makes This Project Different
+
+- Goes beyond fraud detection → includes **decision intelligence layer**  
+- Focuses on **false positive optimization (customer experience)**  
+- Implements **what-if simulation** for real-time threshold tuning  
+- Built as an **end-to-end pipeline (data → model → decision → visualization)**  
+
+---
+
+## ⚙️ Approach
+
+### 1️⃣ Data Engineering (MySQL)
+- Created realistic dataset (~40,000 transactions)
+- Simulated Indian payment behavior
+- Embedded fraud patterns:
+  - Night transactions  
+  - Device switching  
+  - Spend spikes  
+  - Location anomalies  
+
+---
+
+### 2️⃣ Fraud Pattern Analysis (SQL)
 - Amount spike detection  
 - Device trust analysis  
 - Merchant risk segmentation  
@@ -58,77 +66,97 @@ Data Generation → MySQL → SQL Fraud Analysis → Python (Feature Engineering
 
 ---
 
-### 3. Feature Engineering (Python)
-- Spend ratio (behavioural deviation)  
+### 3️⃣ Feature Engineering (Python)
+- Spend ratio (behavioral deviation)  
 - Device trust & anomaly flags  
 - Location anomaly detection  
 - Time-based risk indicators  
 
 ---
 
-### 4. Risk Scoring Model
+### 4️⃣ Risk Scoring Model
 - Built rule-based + ML-inspired scoring logic  
-- Generated transaction-level risk scores  
+- Generated transaction-level **risk_score**  
 
 ---
 
-### 5. Decision Engine
-- APPROVE / REVIEW / DECLINE logic  
+### 5️⃣ Decision Engine
+- Transactions classified into:
+  - APPROVE  
+  - REVIEW  
+  - DECLINE  
 - Based on configurable risk thresholds  
 
 ---
 
-##  Power BI Dashboards
+## 📊 Power BI Dashboards
 
-###  Dashboard 1: Fraud Monitoring
-- Fraud trends over time (day-level granularity)  
-- Merchant category risk analysis  
-- Location-based insights  
+### 🔹 Dashboard 1: Fraud Monitoring
+Tracks fraud trends, merchant risk, and geographic distribution.
 
----
+<img width="1755" height="1241" alt="DB_page-0001" src="https://github.com/user-attachments/assets/ef8897b6-022e-482b-aa07-26913c0a1ee8" />
 
-###  Dashboard 2: False Positive Analysis
-- Root cause analysis of incorrect declines  
-- Device, time, and behavioural drivers  
-- Revenue impact due to blocked legitimate transactions  
 
 ---
 
-###  Dashboard 3: Decision Intelligence
-- Risk score distribution  
-- Decision breakdown vs risk levels  
-- What-if simulation for threshold optimisation  
+### 🔹 Dashboard 2: False Positive Analysis
+Identifies root causes of incorrect declines and customer friction drivers.
+
+<img width="1755" height="1241" alt="DB_page-0002" src="https://github.com/user-attachments/assets/be10ce96-b2c5-45aa-8ac8-353deae53600" />
 
 ---
 
-##  Key Insights
+### 🔹 Dashboard 3: Decision Intelligence
+Enables threshold-based simulation to balance fraud detection vs false positives.
 
-- False positives were concentrated on **untrusted devices**, indicating over-reliance on device signals  
+<img width="1755" height="1241" alt="DB_page-0003" src="https://github.com/user-attachments/assets/b66aebab-4b9f-4d13-a48e-bfdc7083df9b" />
+
+---
+
+## 🔥 Key Insights
+
+- False positives were concentrated on **untrusted devices**, indicating over-sensitive device rules  
 - **Location anomalies had minimal impact**, suggesting geo-signals were well-calibrated  
-- **Moderate spend deviations triggered unnecessary declines**, highlighting scope for threshold tuning  
+- **Moderate spend spikes triggered unnecessary declines**, highlighting scope for threshold tuning  
 
 ---
 
-##  Business Impact
+## 📈 Business Impact (Simulated)
 
-- Reduced false positives (simulated optimisation)  
-- Improved fraud detection accuracy  
-- Enabled data-driven decision-making for risk teams  
-- Introduced dynamic trade-off analysis between fraud prevention and customer experience  
-
----
-
-##  Key Highlight
-
-Implemented a **dynamic threshold simulation layer** allowing stakeholders to:
-
-- Adjust risk thresholds in real time  
-- Visualize impact on fraud detection vs false positives  
-- Optimize decision strategies interactively  
+- Processed 40,000+ transactions with a fraud rate of ~32%  
+- Achieved ~79% precision, ensuring most flagged transactions were genuinely fraudulent  
+- Detected ~6,100+ fraudulent transactions using risk-based scoring  
+- Identified ~1,600 false positives, highlighting opportunities for customer experience optimization  
+- Prevented ~₹3.5 Cr worth of fraudulent transactions (simulated)  
+- Identified ~₹43 L of genuine transactions incorrectly flagged, enabling targeted false positive reduction strategies  
+- Enabled data-driven threshold optimization to balance fraud detection vs customer friction  
 
 ---
 
-##  Tech Stack
+## 🌍 Real-World Relevance
+
+This system mirrors real-world fraud platforms used by payment networks such as Mastercard and Visa, where decision engines continuously optimize fraud prevention while maintaining seamless user experience.
+
+---
+
+## 📊 Dataset
+
+- 40,000+ simulated transactions  
+- Reflects Indian payment behavior  
+- Includes engineered fraud signals and behavioral patterns  
+
+---
+
+## ▶️ How to Run
+
+1. Load dataset from `/data`  
+2. Execute SQL scripts from `/sql`  
+3. Run Python notebooks for feature engineering and scoring  
+4. Open Power BI dashboard to explore insights and simulation  
+
+---
+
+## ⚙️ Tech Stack
 
 - MySQL  
 - Python (Pandas, NumPy)  
@@ -137,27 +165,23 @@ Implemented a **dynamic threshold simulation layer** allowing stakeholders to:
 
 ---
 
-##  Dashboard Preview
+## 🧠 Key Highlight
 
-![Fraud Dashboard]
-<img width="1755" height="1241" alt="DB_page-0001" src="https://github.com/user-attachments/assets/22c451ca-ed82-4280-af38-e86f463cfb5a" />
+Implemented a **dynamic threshold simulation layer** allowing stakeholders to:
 
-
-![False Positive Analysis]
-<img width="1755" height="1241" alt="DB_page-0002" src="https://github.com/user-attachments/assets/8cac531b-8694-44e3-a46e-429e90bbdc76" />
-
-
-![Decision Intelligence]
-<img width="1755" height="1241" alt="DB_page-0003" src="https://github.com/user-attachments/assets/655a15dc-062d-4bb7-a16a-f922dd5a82ae" />
+- Adjust risk thresholds in real time  
+- Observe impact on fraud detection and false positives  
+- Optimize decision-making interactively  
 
 ---
 
-##  Author
+## 👤 Author
 
 **Chetan Sakate**  
 Analyst | Fintech | Data & Decision Systems  
 
 ---
 
-## Note
-This project is a simulation built for analytical and learning purposes, inspired by real-world fintech systems.
+## 📌 Note
+
+This project is a simulation created for analytical and learning purposes, inspired by real-world fintech systems.
